@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertorio de Canciones</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Agregar Canciones</h1>
+        <form id="formulario-cancion">
+            <label for="cancion">Canción:</label>
+            <input type="text" id="cancion" name="cancion" required>
+            <label for="artista">Artista:</label>
+            <input type="text" id="artista" name="artista" required>
+            <label for="tono">Tono:</label>
+            <input type="text" id="tono" name="tono" required>
+            <button type="button" onclick="agregarCancion()">Agregar</button>
+        </form>
+    </div>
+    <div>
+        <h1>Repertorio de Canciones</h1>
+        <div id="canciones-lista"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
