@@ -9,10 +9,8 @@ app.use(express.json());
 
 app.use("/canciones", cancionesRoutes);
 
-app.use(express.static(__dirname));
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+app.get('/', (_, res) => {
+    res.sendFile(path.join(__dirname, './index.html'));
 });
 
 const puerto = 3000;
